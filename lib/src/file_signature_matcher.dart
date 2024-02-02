@@ -35,7 +35,7 @@ class FileSignatureMatcher implements IFileSignatureMatcher {
         matchedExtensions.addAll(signature.extension);
       }
     }
-    return matchedExtensions.isEmpty ? null : matchedExtensions;
+    return matchedExtensions.isEmpty ? null : matchedExtensions.toSet().toList();
   }
 
 }
