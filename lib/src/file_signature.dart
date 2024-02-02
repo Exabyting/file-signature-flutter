@@ -54,9 +54,9 @@ class FileSignature {
 
   bool hasMatch({required List<int> headerBytes}) {
     assert(headerBytes.length >= 12, "At least 12 Bytes are needed to match");
-    if (hexSignature.length < headerBytes.length) return false;
+    if (hexSignature.length > headerBytes.length) return false;
 
-    for (var i = 0; i < headerBytes.length; i++) {
+    for (int i = 0; i < hexSignature.length; i++) {
       if (headerBytes[i] != hexSignature[i]) return false;
     }
 
