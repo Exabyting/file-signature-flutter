@@ -1,4 +1,4 @@
-import 'package:file_signature/src/file_signature.dart';
+import 'file_signature.dart';
 
 abstract class IFileSignatureMatcher{
   List<FileExtension>? getFileExtension({required List<int> headerBytes});
