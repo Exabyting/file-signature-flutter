@@ -1,7 +1,7 @@
 enum FileExtension{
   pdf,
   png,
-  tar_gz,
+  tarGz,
   jpg,
   jpeg,
   $3gp,
